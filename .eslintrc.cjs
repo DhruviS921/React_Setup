@@ -31,7 +31,7 @@ module.exports = {
   plugins: ['@typescript-eslint', 'react', 'prettier'], // prettier
   rules: {
     'react/react-in-jsx-scope': 0,
-    // allow to import devDependencies
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }], // allow to import devDependencies
+    'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
   },
 };

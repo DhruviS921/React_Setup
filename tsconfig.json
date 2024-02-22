@@ -21,6 +21,6 @@
     "noFallthroughCasesInSwitch": true
   },
   // added .eslintrs.cjs to look up that file
-  "include": [".eslintrc.cjs", "src"],
+  "include": [".eslintrc.cjs", "src", "./commitlint.config.cjs"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

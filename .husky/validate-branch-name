@@ -15,5 +15,4 @@ if [[ "$branch" == "main" ]]; then
   exit 1
 fi
 
-# If both conditions are met, allow pushing:
 echo "Pushing to branch '$branch'..."

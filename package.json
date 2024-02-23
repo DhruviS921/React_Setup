@@ -15,8 +15,7 @@
     "**/*.{js,jsx,ts,tsx}": [
       "npm run lint",
       "npm run format",
-      ".husky/commit-msg",
-      ".husky/validate-branch-name"
+      ".husky/commit-msg"
     ]
   },
   "dependencies": {

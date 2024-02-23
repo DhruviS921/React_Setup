@@ -3,7 +3,7 @@
 
 #!/bin/sh
 branch="$(git rev-parse --abbrev-ref HEAD)"
-regex = "^(main|develop|[A-Z]+-\\d+_\\S+)$",
+regex = "^(CR-[0-9]+_)([a-zA-Z0-9_-]+\.?)+$|^hotfix-(CR-[0-9]+_)([a-zA-Z0-9_-]+\.?)+$"
 
 if ! [[ $branch =~ $regex ]]; then
   echo "Incorrect Branch Name"

@@ -20,7 +20,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": ".husky/validate-branch-name.sh && git push"
+      "pre-push": ".husky/validate-branch-name && git push"
     }
   },
   "dependencies": {

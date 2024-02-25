@@ -15,9 +15,13 @@
     "**/*.{js,jsx,ts,tsx}": [
       "npm run lint",
       "npm run format",
-      ".husky/commit-msg",
-      "npx validate-branch-name"
+      ".husky/commit-msg"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": ".husky/validate-branch-name.sh && git push"
+    }
   },
   "dependencies": {
     "react": "^18.2.0",
